@@ -12,5 +12,10 @@ def dias_que_faltam(data_futura, hoje=date.today()) -> int:
     return (data_futura - hoje).days
 
 
+def dias_que_passaram(data_passada, hoje=date.today()) -> int:
+    return (hoje - data_passada).days
+
+
 # print(idade(date(2008, 5, 12)))
 # print(dias_que_faltam(date(2026, 12, 31)))
+# print(dias_que_passaram(date(2026, 1, 1)))
